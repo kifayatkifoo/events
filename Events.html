@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    ​
+    <div class="users-list"></div>
+    <div class="user-add-form"></div>
+    ​
+    <script src="app.js"></script>
+    <!-- <script>
+      let users = ["Ilyas", "Mohsin", "Kareem", "Naveed"];
+      function renderUsers() {
+        document.body.querySelector(".users-list").innerHTML = "";
+        const ul = document.createElement("ul");
+        users.forEach((user, index) => {
+          let li = document.createElement("li");
+          let closeButton = document.createElement("button");
+          closeButton.innerHTML = "&times;";
+          li.innerHTML = user;
+          closeButton.onclick = function () {
+            users.splice(index, 1);
+            renderUsers();
+          };
+          li.append(closeButton);
+          ul.append(li);
+        });
+        document.body.querySelector(".users-list").append(ul);
+      }
+      const input = document.createElement("input");
+      const inputButton = document.createElement("button");
+      inputButton.innerHTML = "Create User";
+      input.placeholder = "Create a new user";
+      document.body.querySelector(".user-add-form").append(input);
+      document.body.querySelector(".user-add-form").append(inputButton);
+      inputButton.onclick = function () {
+        if (input.value) {
+          users.push(input.value);
+          input.value = "";
+        }
+        renderUsers();
+      };
+      renderUsers(); -->
+
+    <!-- // window.onkeydown = (e) => {
+      //     console.log(e);
+      // }
+      // let button = document.querySelector("button");
+      // button.onclick = function (e) {
+      //     e.target.innerHTML = "You Clicked";
+      // }
+    </script> -->
+  </body>
+</html>
